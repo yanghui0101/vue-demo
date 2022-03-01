@@ -16,10 +16,6 @@ export default new Router({
       path: '/',
       redirect: '/index'
   },{
-    path: '/login', 
-    component: Login, 
-    name: '登陆官网', 
-  },{
     path: '/index', 
     component: Index, 
     name: '官网首页', 

@@ -1,5 +1,5 @@
 <template>
-    <div class="index-box">
+    <div class="index-box" >
         <Header></Header>
         <div class="banner-text-box">
             <!-- <p class="p1">行业大数据和人工智能</p>
@@ -130,6 +130,8 @@
         </div>
 
         <Footer></Footer>
+
+        <Login v-if="isLogin" @closeLogin='closeLogin'></Login>
     </div>
 </template>
 
@@ -139,16 +141,19 @@ import Header from '@/components/Header'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 import {WOW} from 'wowjs'
+import Login from './Login.vue'
 export default {
     name: "Index",
     components: {
         Header,
         swiper,
-      swiperSlide,
-      Footer
+        swiperSlide,
+        Footer,
+        Login
     },
     data() {
         return {
+            isLogin:false,
             // 轮播图的选项
             swiperOption: {
                 slidesPerView: 4,
@@ -169,10 +174,6 @@ export default {
                     id: "2",
                     img: require("../assets/images/rw2.png"),
                 },
-                // {
-                //     id: "3",
-                //     img: require("../assets/images/rw3.png"),
-                // },
                 {
                     id: "4",
                     img: require("../assets/images/rw4.png"),
@@ -239,7 +240,10 @@ export default {
         };
     },
     mounted () {
-        !localStorage.getItem('user') && this.$router.push('/login');
+        if(!localStorage.getItem('user')){
+            this.isLogin = true;
+            document.body.style.overflow = 'hidden'
+        }
         this.$nextTick(() => {
 		    var wow = new WOW({
 				boxClass: 'wow', ///动画元件css类（默认为wow）
@@ -257,8 +261,10 @@ export default {
             this.jsTitle = item.title;
             this.jsText = item.text;
             this.jsUrl = item.imgUrl;
+        },
+        closeLogin(flag){
+            this.isLogin = flag
         }
-        
     },
 };
 </script>
@@ -360,12 +366,12 @@ export default {
         color: #FF4C29;
         position: relative;
         width: 315px;
-    margin: 0 auto;
-            white-space: nowrap;
-            overflow: hidden;
-            animation: typing 5s steps(7), 
-                       caret .5s steps(1) 5; 
-            border-right: 1px solid transparent;
+        margin: 0 auto;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 5s steps(7), 
+                    caret .5s steps(1) 5; 
+        border-right: 1px solid transparent;
     }
     .p3{
         font-size: 20px;
