@@ -332,7 +332,7 @@ export default {
     50% { border-right-color: #000; }
 }
 .banner-text-box{
-    background: url('../assets/images/banner.png')  no-repeat;
+    background: url('../assets/images/banner.jpg')  no-repeat;
     background-size: cover;
     width: 100%;   
     height: calc(100vh);
