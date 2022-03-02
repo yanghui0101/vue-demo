@@ -47,19 +47,19 @@
             </div>
             <div class="cp-bottom-box">
                 <div class="cp-bottom-item">
-                    <img src="../assets/images/cp1.png"/>
+                    <img src="../assets/images/cp1.jpg"/>
                     <p class="text1">DSS物联网数据传输平台 </p>
                 </div>
                 <div class="cp-bottom-item">
-                    <img src="../assets/images/cp2.png"/>
+                    <img src="../assets/images/cp2.jpg"/>
                     <p class="text1">大数据平台 </p>
                 </div>
                 <div class="cp-bottom-item">
-                    <img src="../assets/images/cp3.png"/>
+                    <img src="../assets/images/cp3.jpg"/>
                     <p class="text1">技术体系 </p>
                 </div>
                 <div class="cp-bottom-item">
-                    <img src="../assets/images/cp4.png"/>
+                    <img src="../assets/images/cp4.jpg"/>
                     <p class="text1">产品体系 </p>
                 </div>
             </div>
@@ -105,7 +105,7 @@
                 <a href="">更多<i class="el-icon-arrow-right" style="padding-left:10px"></i></a>
             </div>
             <div class="zx-box">
-                <img src="../assets/images/xw.png" alt="" class="wow pulse">
+                <img src="../assets/images/xw.jpg" alt="" class="wow pulse">
                 <div class="wow bounceInUp">
                     <h3 ><a href="http://ah.anhuinews.com/chz/xqyq/nq/202202/t20220223_5826351.html" target="_blank">212项技术落地应用 “黑科技”闪耀冬奥会</a></h3>
                     <p>2022年北京冬奥会上，奥运史上首次机器人水下火炬接力、国家速滑馆“冰丝带”零碳制冰、主媒体中心智慧餐厅机器人烹饪送餐“一条龙”……冰雪之约也是科技之约，这背后到底有着怎样的故事？</p>
@@ -126,7 +126,7 @@
         </div>
 
         <div class="map-box">
-            <img src="../assets/images/map.png" alt="">
+            <img src="../assets/images/map.jpg" alt="">
         </div>
 
         <Footer></Footer>
@@ -190,25 +190,25 @@ export default {
             isActive:'1',
             jsTitle: '实时数联',
             jsText:'通过实时数联平台，搭建全国范围的物理分散逻辑集中的数联网络。',
-            jsUrl:require("../assets/images/pic1.png"),
+            jsUrl:require("../assets/images/pic1.jpg"),
             jsList:[
                 {
                     id: "1",
                     title: '实时数联',
                     text:'通过实时数联平台，搭建全国范围的物理分散逻辑集中的数联网络。',
-                    imgUrl:require("../assets/images/pic1.png"),
+                    imgUrl:require("../assets/images/pic1.jpg"),
                 },
                 {
                     id: "2",
                     title: '数据协同开发',
                     text:'数据建模、数据集成、数据开发、任务测试和任务上线的全流程的DataOps开发方式，提升在线协同开发效率和开发规范。 ',
-                    imgUrl:require("../assets/images/pic2.png"),
+                    imgUrl:require("../assets/images/pic2.jpg"),
             },
                 {
                     id: "3",
                     title: '数字资产管理',
                     text:'数字化企业的部门众多，员工基数大，内容数字资产更加庞杂。标签化、权限化管理后的内容资产，能降低员工的内容工作时间成本，提升协作效率。',
-                    imgUrl:require("../assets/images/pic3.png"),
+                    imgUrl:require("../assets/images/pic3.jpg"),
                 },
             ],
             imgList:[
