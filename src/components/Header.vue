@@ -87,13 +87,15 @@ export default {
 }
 .el-menu--horizontal>.el-menu-item{
   color: #fff;
+  margin-right: 30px;
 }
 .el-menu--horizontal>.el-menu-item.is-active{
   border-bottom: none;
   color: #fff;
+  background: rgba(255, 255, 255, .4);
 }
 .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus, .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover, .el-menu--horizontal>.el-submenu .el-submenu__title:hover{
-  background: none;
+  background: rgba(255, 255, 255, .4);
   color:  #fff;
   border-bottom: none;
 }

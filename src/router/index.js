@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/views/Index'
-import Login from '@/views/Login'
+import Group from '@/views/Group'
 
 import First from '@/views/First'
 import Second from '@/views/Second'
@@ -21,13 +21,18 @@ export default new Router({
     name: '官网首页', 
   },
   {
-     path: '/index', component: First, name: '服务',
+     path: '/', component: First, name: '服务',
   },
   {
-    path: '/index', component: Second, name: '产品'
+    path: '/group', 
+    component: Group, 
+    name: '集团简介', 
   },
   {
-    path: '/index', 
+    path: '/', component: Second, name: '产品'
+  },
+  {
+    path: '/', 
     component: About, 
     name: '联系我们', 
   },
