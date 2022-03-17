@@ -1,5 +1,8 @@
 <template>
    <div class="footer">
+       <div class="map-box">
+            <img src="../assets/images/map.jpg" alt="">
+        </div>
         <ul>
             <li style="padding-top:30px">
                 <img src="../assets/images/logo.png" alt="" width="200" class="logo">
@@ -33,12 +36,20 @@ export default {
 <style scoped lang="less">
 .footer{
     background: #000000;
-    padding: 30px 0 20px;
+    padding-bottom:20px;
     color: #fff;
+    .map-box{
+        width: 100%;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }    
+    }
     ul{
         width: 1200px;
         margin: 0 auto;
         display: flex;
+        padding-top: 30px;
         justify-content: space-around;
         li{
             list-style-type:none;

@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Index from '@/views/Index'
 import Group from '@/views/Group'
 
-import First from '@/views/First'
+import Work from '@/views/Work'
 import Second from '@/views/Second'
 import About from '@/views/About'
 
@@ -21,7 +21,7 @@ export default new Router({
     name: '官网首页', 
   },
   {
-     path: '/', component: First, name: '服务',
+     path: '/work', component: Work, name: '业务',
   },
   {
     path: '/group', 
